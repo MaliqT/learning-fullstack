@@ -12,78 +12,128 @@
     </head>
 
     <body>
-        <h1>Hello, World!</h1>
-
+        <header>
+            <h1>Hello, World!</h1>
+        </header>
         <!--hr = horizontal line display-->
         <hr>
+       
+        <main>
+            <h2>Learning how to use HTML</h2>
+            <p>This is my first webpage.</p>
+            <p>This is a paragragh <br> and this is a line break</p>
+
+            <hr>
+            
+            <h3>Text Basics!</h3>
+            <p>This is how to <em>emphasize</em> or <em>italicized</em> a word or phrase</p>
+            <p>If we want to bold something, it would look like <strong>this!</strong></p>
+            <p>Here, we can create an abbreviation hover. For example, hover over <abbr title="Hyper Text Markup Language">HTML</abbr></p>
+            <p>&nbsp;&nbsp;&nbsp;...What if I needed indents?</p>
+
+            <hr>
+
+            <h3>Lists!</h3>
+            <section id="lists">
+                <p>From here, I'll list out a few things to create an ordered list in HTML</p>
+                <ol>
+                    <li>This is the first in the list</li>
+                    <li>This is the second in the list</li>
+                    <li>This is the third in the list</li>
+                </ol>
+
+                <p>This is an example of an unordered list if using bullet points:</p>
+                <ul>
+                    <li>Ship</li>
+                    <li>Boat</li>
+                    <li>Kanoe</li>
+                </ul>
+
+                <p>Next form of lists is a description list:</p>
+                <dl>
+                    <dt>Hawaii</dt>
+                    <dd>Just came back from vacation from Hawaii. Very nice place. Sunny and hot.</dd>
+
+                    <dt>Florida</dt>
+                    <dd>This is our next trip to use up our flight credits.</dd>
+                </dl>
+            </section>
+
+
+            <hr>
+            
+            <h3>Links!</h3>
+            <section id="links">
+                <p>I can provide links like this:</p>
+                <a href="https://github.com/MaliqT">My GitHub account</a>
+                <a href="https://linkedin.com/in/maliq-t">Linkedin Profile</a>
+                <a href="https://www.w3schools.com/html/">HTML Tutorial</a>
+
+                <p>I can even list it out like this:</p>
+                <li><a href="https://github.com/MaliqT">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/maliq-t">Linkedin</a></li>
+                <li><a href="https://www.w3schools.com/html/">HTML Tutorial</a></li>
+                <p>This was done by nesting in the link elements inside the paragraph elements in HTML<br>We can even set up links to different sections within the same web page given a section ID. For example, this link takes you back to the <a href="#">top</a> of the page!</p>
+            </section>
+
+            <hr>
+
+            <h3>Images!</h3>
+            <p>Here, I'll be messing around with pasting images that I took from Hawaii</p>
+            <figure>
+                <img src="imgs/stick.JPG" alt="HTML5 Logo" title="This is a standing stick near the ocean. Quite symbolic." width="400" height="600">
+
+                <figcaption>
+                    <em>The size of this image is originally set at 4000x6000 taken by a Nikon d3400 Camera. <br>I've descaled the image by setting the width and height to be 400x600 instead to show up cleanly on screen.</em>
+                </figcaption>
+            </figure>
+
+            <p>This last example is a grouping of links that is a list.</p>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://youtube.com">YouTube</a>
+                    </li>
+                    <li>
+                        <a href="https://google.com">Google</a>
+                    </li>
+                    <li>
+                        <a href="#lists">Learning Lists</a>
+                    </li>
+                    <li>
+                        <a href="#links">Learning Links</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h3>Semantics!</h3>
+
+            <p>Below are some semantic examples.</p>
+
+            <article>
+                <p>From this point on, this is an article.</p>
+                <section>
+                    <p>From this point on, this is an entire section inside the article. We can add in any lists or descriptions here.</p>
+                    <aside>
+                        <p>This is an aside element that is a dropdown. </p>
+                        <details>
+                            <summary>
+                                Click this dropdown!
+                            </summary>
+                            <p>Using the <mark>mark</mark> element, we can highlight text.</p>
+                        </details>
+                    </aside>
+                </section>
+            </article>
+            <p>Semantics are a way to organize not only the web page but the code as well. Rather than using div and span that have no semantic meaning, we can specify parts of our code for assisted tools to recognize those parts. So far for semantics, I've used header, main, article, section, aside, details, summary, mark, and time.</p>
+        </main>
         
-        <h2>Learning how to use HTML</h2>
-        <p>This is my first webpage.</p>
-        <p>This is a paragragh <br> and this is a line break</p>
-
         <hr>
         
-        <h3>Text Basics!</h3>
-        <p>This is how to <em>emphasize</em> or <em>italicized</em> a word or phrase</p>
-        <p>If we want to bold something, it would look like <strong>this!</strong></p>
-        <p>Here, we can create an abbreviation hover. For example, hover over <abbr title="Hyper Text Markup Language">HTML</abbr></p>
-        <p>&nbsp;&nbsp;&nbsp;...What if I needed indents?</p>
-
-        <hr>
-
-        <h3>Lists!</h3>
-        <p>From here, I'll list out a few things to create an ordered list in HTML</p>
-        <ol>
-            <li>This is the first in the list</li>
-            <li>This is the second in the list</li>
-            <li>This is the third in the list</li>
-        </ol>
-
-        <p>This is an example of an unordered list if using bullet points:</p>
-        <ul>
-            <li>Ship</li>
-            <li>Boat</li>
-            <li>Kanoe</li>
-        </ul>
-
-        <p>Next form of lists is a description list:</p>
-        <dl>
-            <dt>Hawaii</dt>
-            <dd>Just came back from vacation from Hawaii. Very nice place. Sunny and hot.</dd>
-
-            <dt>Florida</dt>
-            <dd>This is our next trip to use up our flight credits.</dd>
-        </dl>
-
-
-        <hr>
-        
-        <h3>Links!</h3>
-        <p>I can provide links like this:</p>
-        <a href="https://github.com/MaliqT">My GitHub account</a>
-        <a href="https://linkedin.com/in/maliq-t">Linkedin Profile</a>
-        <a href="https://www.w3schools.com/html/">HTML Tutorial</a>
-
-        <p>I can even list it out like this:</p>
-        <li><a href="https://github.com/MaliqT">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/maliq-t">Linkedin</a></li>
-        <li><a href="https://www.w3schools.com/html/">HTML Tutorial</a></li>
-        <p>This was done by nesting in the link elements inside the paragraph elements in HTML<br>We can even set up links to different sections within the same web page given a section ID. For example, this link takes you back to the <a href="#">top</a> of the page!</p>
-
-        <hr>
-
-        <h3>Images!</h3>
-        <p>Here, I'll be messing around with pasting images that I took from Hawaii</p>
-        <figure>
-            <img src="imgs/stick.JPG" alt="HTML5 Logo" title="This is a standing stick near the ocean. Quite symbolic." width="400" height="600">
-
-            <figcaption>
-                <em>The size of this image is originally set at 4000x6000 taken by a Nikon d3400 Camera. <br>I've descaled the image by setting the width and height to be 400x600 instead to show up cleanly on screen.</em>
-            </figcaption>
-        </figure>
-        
-        <hr>
-        <p>Here will be the footer and we can put misc information such as copyright info and whatnot</p>
-        &lt;&lt;&lt; &copy; MaliqT &gt;&gt;&gt;
+        <footer>
+            <p>Here will be the footer and we can put misc information such as copyright info and whatnot</p>
+            &lt;&lt;&lt; &copy; MaliqT &gt;&gt;&gt;
+        </footer>
     </body>
 </html>
