@@ -107,6 +107,8 @@
                 </ul>
             </nav>
 
+            <hr>
+
             <h3>Semantics!</h3>
 
             <p>Below are some semantic examples.</p>
@@ -127,6 +129,58 @@
                 </section>
             </article>
             <p>Semantics are a way to organize not only the web page but the code as well. Rather than using div and span that have no semantic meaning, we can specify parts of our code for assisted tools to recognize those parts. So far for semantics, I've used header, main, article, section, aside, details, summary, mark, and time.</p>
+
+            <hr>
+
+            <h3>Tables!</h3>
+
+            <p>Below here I will display out a table with a very basic CSS style.</p>
+
+            <table>
+                <caption>My Schedule</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">
+                            <time datetime="08:00">8am</time>-<time datetime="09:00">9am</time>
+                        </td>
+                        <td>Wake up, eat breakfast</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <time datetime="09:00">9am</time>-<time datetime="12:00">12pm</time>
+                        </td>
+                        <td>Practice coding and look for jobs</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">
+                            <time datetime="12:00">12pm</time>-<time datetime="16:00">4pm</time>
+                        </td>
+                        <td>Cook and eat dinner</td>
+                    </tr>
+                    <tr>
+                        <td scope ="row" rowspan="3">All other times</td>
+                        <td>Free Time</td>
+                    </tr>
+                    <tr>
+                        <td>Play Video Games</td>
+                    </tr>
+                    <tr>
+                        <td>Sleep</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">This is my daily routine until I find work.</td>
+                    </tr>
+                </tfoot>
+            </table>
+
         </main>
         
         <hr>

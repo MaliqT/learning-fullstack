@@ -22,3 +22,7 @@ Displaying images is pretty versatile in HTMl and quite easy to use. Using the i
 
 #### Semantics:
 Learned about what semantics are and how they are used to organize the structure of our html code files not just visually but programming wise as well. Before, programmers would use div and span to divide up parts of html sections, but now we can specifically state a part of the code for assistive tools. So far for this project, I've used semantics like header to declare which part of the html code is the header. The main element for the main body portion of the web page. The article element that specifies which part has it's own topic that can be broken up into smaller parts called sections. Then I used an aside element that displays a dropdown arrow feature where the user can click and more text or images or information will pop up below which is also done using the details element and summary element. Lastly, I used nav which is used for major blocks of navigation links.
+
+#### Tables:
+Here I implemented a simple table that outlines what my daily routine is like on a basic level. I did have to incorporate some CSS level code just to get the look of the table correctly displayed on the webpage for the user. Just a simple topic utilizing the table element as well as structuring the table with table headers, table rows, and table data. Very straight forward topic.
+
