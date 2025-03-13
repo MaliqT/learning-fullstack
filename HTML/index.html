@@ -181,6 +181,126 @@
                 </tfoot>
             </table>
 
+            <hr>
+
+            <h3>Forms & Input!</h3>
+
+            <p>In this section, I'll be implementing an html form that extracts user input.</p>
+
+            <article id="userForm">
+                <h3>User Form</h3>
+                        <!--action is the destination to send the input. Could be my own server but in this case, send it to a rebound website-->
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>User Form</legend>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" 
+                            id="firstName" 
+                            placeholder="First Name" 
+                            autocomplete="on" 
+                            required>
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" 
+                            id="lastName"
+                            placeholder="Last Name"
+                            autocomplete="on"
+                            required>
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" 
+                            id="password"
+                            placeholder="Password"
+                            required>
+                        </p>
+                        <p>
+                            <label for="birthYear">Birth Year:</label>
+                            <input type="number" name="birthYear" 
+                            id="birthYear"
+                            min="1950"
+                            max="2020"
+                            step="1"
+                            value="2000">
+                        </p>
+                        <p>
+                            <label for="food">Favorite Food Type:</label>
+                            <select name="food" id="food">
+                                <optgroup label="Food Type">
+                                    <option value="fastFood">Fast Food</option>
+                                    <option value="fancyFood">Fancy Food</option>
+                                    <option value="healthyFood">Healthy Food</option>
+                                </optgroup>
+                                <optgroup label="Cultural Foods">
+                                    <option value="indianFood">Indian Food</option>
+                                    <option value="mexicanFood">Mexican Food</option>
+                                    <option value="americanFood">American Food</option>
+                                    <option value="chineseFood">Chinese Food</option>
+                                    <option value="koreanFood">koreanFood</option>
+                                </optgroup>
+                                <option value="Other">Other</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Pick a place you would like to go:</legend>
+                        <p>
+                            <input type="radio" name="place"
+                            id="europe" value="europe">
+                            <label for="europe">Europe</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="place"
+                            id="rio" value="rio">
+                            <label for="rio">Rio</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="place"
+                            id="jamaica" value="jamaica">
+                            <label for="jamaica">Jamaica</label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Do you have any pets?</legend>
+                        <p>
+                            <input type="checkbox" name="pets" id="dog" value="dog">
+                            <label for="dog">Dog</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="cat" value="cat">
+                            <label for="cat">Cat</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="ferret" value="ferret">
+                            <label for="ferret">Ferret</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="fish" value="fish">
+                            <label for="fish">Fish</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="pets" id="other">
+                            <label for="other">Other</label>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Write a little note</legend>
+                        <label for="note">Your Note:</label>
+                        <br>
+                        <textarea name="note" id="note" cols="30" rows="10" placeholder="Write a note"></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Submit</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </article>
+
         </main>
         
         <hr>
