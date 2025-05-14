@@ -24,9 +24,16 @@ h1, h2 {
 h1 {
     border: 2px dashed red;
     width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
 }
 
 p {
     /*Will double the font size for all paragraphs in relative to the default font size. Either set by the browser or by us devs in a parent HTML element.*/
+
+    /*Font size rem = relative to font size of root element*/
     font-size: 2rem;
+
+    /* Width of 50 characters until new line*/
+    width: 50ch;
 }
