@@ -23,18 +23,28 @@ body,html {
 }
 
 .keys li {
-    border: .3rem solid black;
+    border: .2rem solid black;
     border-radius: .5rem;
     font-size: 1.5rem;
     color: white;
     transition: all .07s ease;
-    font-weight: bold;
     display: inline-block;
     text-align: center;
     padding: 5px 2.2vw;
     text-decoration: none;
     background: rgba(0,0,0,0.4);
     text-shadow: 0 0 .5rem black;
+    width: 1.5rem;
+    height: 3rem;
+}
+
+.keys li span {
+    font-size: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffc600;
 }
 
 .playing {
