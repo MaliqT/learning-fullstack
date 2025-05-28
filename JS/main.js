@@ -241,7 +241,32 @@ addNums(1, 2);
 
 // Arrow function: curly braces are not needed if only using one line
 
+// Default values can be overriden
 const addingNums = (num1 = 1, num2 = 2) => num1 + num2;
+const subtractingNums = (num3, num4) => num3 - num4;
+
+// Template:
+// () are any parameters
+// => means function body after the =>
+
+// Example:
+const doThis = (() => {
+    console.log("Do something");
+});
+// This example has no parameters and simply just outputs "Do something".
+
+// Second example:
+const notThis = (function() {
+    console.log("Not this");
+});
+
+// Third example:
+const doThat = (notThis())
+
+// Last example:
+const notThat = (doThis(), 5, "Hello");
+// This function takes in a function as the first parameter, followed by 2 other parameters of different types.
+// You can use arrow function here too
 
 console.log(addingNums(5,5));
 

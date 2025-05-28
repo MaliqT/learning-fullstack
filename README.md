@@ -5,8 +5,7 @@ This project will follow the steps along roadmap.sh fullstack component.
 ## 1. Learning HTML
 The first step is learning HTMl/CSS. This is to display the contents of a webpage to the user. Only context and style of the webpage will be handled throughout HTMl and CSS. Thus far, the
 start of an html file has the document type (!DOCTYPE html), the language of the page (html lang="en") and the character encoding (meta charset="UTF-8"). From here, the web page
-will have a head that contains meta information about the document as well as holding scripts. This is not seen on the web page. Afterwards, a body is created that contains all visible content and html elements such as div, 
-section, article, header, footer, etc. All enclosed between <>.
+will have a head that contains meta information about the document as well as holding scripts. This is not seen on the web page. Afterwards, a body is created that contains all visible content and html elements such as div, section, article, header, footer, etc. All enclosed between <>.
 
 #### Text Basics:
 I learned the basics of writing text within an HTML file. We have a paragraph such as &lt;p&gt; that is block level, meaning that it creates an entire block section of code that can be written inside of it. We can then change the way the text is displayed using inline level code by making it italicized or bold using em for emphasizing words or phrases, and strong which will bold words or phrases. We can abbreviate words and then show the abbreviation for those words when the user hovers over the corresponding abbreviation. Furthermore, we can change indentation manually and break lines in a paragraph using &lt;br&gt;

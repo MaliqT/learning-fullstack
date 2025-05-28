@@ -15,19 +15,19 @@ const comments = [
 
 // Some and Every checks
 // Array.prototype.some() : Check if at least one thing in the array meets the criteria
-const isAdult = people.some(function(person) {
-    const currentYear = (new Date().getFullYear());
+// const isAdult = people.some(function(person) {
+//     const currentYear = (new Date().getFullYear());
 
-    if (currentYear - person.year >= 19) {
-        return true;
-    }
-});
+//     if (currentYear - person.year >= 19) {
+//         return true;
+//     }
+// });
 
-// Or like this:
-const isAdult = people.some(person => {
-    const currentYear = (new Date()).getFullYear();
-    return currentYear - person.year >= 19;
-});
+// // Or like this:
+// const isAdult = people.some(person => {
+//     const currentYear = (new Date()).getFullYear();
+//     return currentYear - person.year >= 19;
+// });
 
 // Or like this:
 const isAdult = people.some(person => (new Date()).getFullYear - person.year >= 19);
@@ -49,16 +49,16 @@ const allAdults = people.every(person => (new Data()).getFullYear - person.year 
 // Array.prototype.find() : Looks for the FIRST occurrence or appearance of an item in the array and returns that single item.
 // If there are multiple instances, again it only returns the first one that appears.
 
-const comment = comments.find(function(comment) {
-    if (comment.id === 823423) {
-        return true;
-    }
-});
+// const comment = comments.find(function(comment) {
+//     if (comment.id === 823423) {
+//         return true;
+//     }
+// });
 
-// Or like this:
-const comment = comments.find(comment => {
-    return comment.id === 823423;
-});
+// // Or like this:
+// const comment = comments.find(comment => {
+//     return comment.id === 823423;
+// });
 
 // Or like this:
 const comment = comments.find(comment => comment.id === 823428);
